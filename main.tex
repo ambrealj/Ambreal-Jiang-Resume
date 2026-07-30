@@ -1,0 +1,248 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+
+
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\huge \scshape Ambreal Jiang} \\ \vspace{1pt}
+    \small 323-961-3119 $|$ \href{ambrealj@ucla.edu}{\underline{ambrealj@ucla.edu}} $|$ 
+    \href{https://www.linkedin.com/in/ambreal-jiang/}{\underline{linkedin.com/in/ambreal-jiang}} $|$
+    \href{https://github.com/ambrealj}{\underline{github.com/ambrealj}} %$|$
+   % \href{https://ambreal-jiang.vercel.app/}{\underline{Website}} 
+   \resumeItem{Computer Science and Engineering student at UCLA specializing in computer vision, embedded systems, and hardware-software integration, with a parallel passion for film shaped by hands-on festival production experience.}
+\end{center}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Los Angeles (UCLA)}{Fall 2025 -- Spring 2029}
+      {B.S. in Computer Science and Engineering}{Los Angeles, CA}
+    \resumeItem{\textbf{Relevant Coursework: }Data Structures and Algorithms, Logic Design of Digital Systems, Software Construction, Computer Organization, Linear Algebra, Multivariable Calculus, Physics: Mechanics, Physics Mechanics Lab} \resumeItem{\textbf{Involvements: }Bruin Baja Racing (Electronics), IEEE WATT (Secretary \& Webmaster), IEEE Open Project Space, Society of Women Engineers (SWE), Bruin Film Society}
+ 
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, C, JavaScript, TypeScript, Java, SQL, HTML/CSS} \\
+    \textbf{AI \& Software:}{: OpenCV, YOLOv8, TensorFlow, PyTorch, Scikit-learn, MediaPipe, Hugging Face Transformers, EasyOCR, FastAPI, Flask, Node.js, Express.js, Next.js, Git, Linux}\\
+     \textbf{Embedded \& Hardware:}{: Arduino, STM32, Teensy, KiCad, Autodesk Fusion, SolidWorks, Oscilloscopes, Analog Discovery 2 (AD2), Digital Multimeters (DMMs), WaveForms, MATLAB, Grafana} \\
+ 
+    }}
+ \end{itemize}
+%IntelliJ, Eclipse
+
+%-----------PROJECTS-----------$|$
+\section{Project Experience}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{\underline{\href{https://github.com/ambrealj/AI-ML-Basketball-Analysis}{AI/ML Basketball Analysis}}} $|$ \emph{Python, YOLOv8, PyTorch, OpenCV, Supervision, Transformers}}{July 2026 -- August 2026}
+          \resumeItemListStart
+            \resumeItem{Tracked players and ball across full-game footage in real time by integrating a fine-tuned YOLOv8 detector (Ultralytics) with the Supervision tracking library.}
+            \resumeItem{Automated team classification with zero labeled training data using a zero-shot model (Hugging Face Transformers), eliminating manual jersey-based labeling.}
+            \resumeItem{Generated real-world speed, distance, and possession analytics by detecting court keypoints and applying an OpenCV perspective transform to convert broadcast footage into a top-down tactical view.}
+       
+           
+          \resumeItemListEnd
+         \resumeProjectHeading         {\textbf{\underline{\href{https://github.com/ambrealj/Pneumonia-Classification-Site}{Pneumonia Detection Web Application}}} $|$  \emph{Python, TensorFlow/Keras, Flask, Pillow}}{July 2026 -- August 2026}
+          \resumeItemListStart
+            \resumeItem{Achieved 98\% recall and 93.5\% accuracy across 5,200+ chest X-rays by training and validating a deep learning classifier (TensorFlow/Keras) against ground-truth diagnostic labels. \href{https://github.com/ambrealj/0shot}{(Code)}}
+            \resumeItem{Deployed a Flask web app delivering instant pneumonia diagnostics from user-uploaded X-rays through an interactive browser UI.}
+            \resumeItem{Sustained 94\% precision alongside 98\% recall on pneumonia-positive cases, minimizing false positives without sacrificing detection sensitivity.}
+       
+          
+          \resumeItemListEnd
+           \resumeProjectHeading          {\textbf{\underline{\href{https://github.com/ambrealj/Sign-Language-Detection}{Real-Time ASL Gesture Recognition}}} $|$  \emph{Python, OpenCV, MediaPipe, Scikit-Learn}}{July 2026 -- August 2026}
+          \resumeItemListStart
+            \resumeItem{Built a real-time ASL letter classifier by extracting 21-point hand landmarks via MediaPipe and training a Scikit-Learn model on a self-collected dataset of 6,500 labeled gesture images.}
+            \resumeItem{Enabled instant gesture-to-letter translation from live webcam input by running landmark extraction and classification in a single real-time inference pipeline.}
+            \resumeItem{Improved model efficiency over raw-pixel approaches by classifying compact landmark coordinates instead of full images, reducing input dimensionality and training time.}
+        
+          \resumeItemListEnd
+    
+           \resumeProjectHeading
+          {\textbf{\underline{\href{https://github.com/ambrealj/DocuQuest-LLM}{High Performance Document RAG Engine}}} $|$ \emph{C++}}{March 2026}
+          \resumeItemListStart
+    
+            \resumeItem{Built an end-to-end RAG pipeline that generates source-grounded LLM responses by retrieving and injecting relevant documents into each query.}
+            \resumeItem{Cut irrelevant context and hallucinated outputs by engineering a retrieval module that constrains generation to minimal, verified source material.}
+            \resumeItem{Lowered query latency and inference cost by optimizing the retrieval-to-generation pipeline for faster end-to-end processing.}
+          \resumeItemListEnd    
+       
+    \resumeSubHeadingListEnd
+
+ 
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Secretary And Webmaster}{April 2026 -- Present}
+      {IEEE WATT}{Los Angeles, CA}
+      \resumeItemListStart
+         \resumeItem{Engineered a full-stack web app and designed responsive UI components that improved usability, navigation, and visual consistency using JavaScript, Node.js, Express, Bootstrap, and Handlebars \href{https://github.com/uclawatt/watt-site}{(Code)}, \href{https://watt-site-blush.vercel.app/}{(Website)}}
+         \resumeItem{Authored and distributed weekly newsletters to 350+ members, boosting event visibility and member engagement}
+        \resumeItem{Streamlined internal communication and event coordination for the officer team by building a centralized Notion workspace}
+        
+       
+      
+      %  \resumeItem{Received an Eglinton-Lawrence Volunteer Service Award from MPP Robin Martin for volunteer work with Baycrest (2024)}
+    \resumeItemListEnd
+ 
+  \resumeSubheading
+      {First Tier Technology Consultant}{February 2026 -- Present}
+      {UCLA Anderson School of Management Computing and Information Services}{Los Angeles, CA}
+      \resumeItemListStart
+    
+        \resumeItem{Delivered front-line IT support across software, hardware, AI tools, CMS platforms, and library databases for 2,000+ students and faculty, in person and via Freshservice ticketing}
+        \resumeItem{Installed, configured, and resolved issues across hardware, Windows/macOS, and campus-wide applications}
+    
+      \resumeItemListEnd
+
+  
+
+    \resumeSubheading
+      {Next Wave Committee Member}{July 2024 -- June 2025}
+      {Toronto International Film Festival}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Curated a 10-film program for the 2025 TIFF Next Wave Film Festival and coordinated flagship events}
+        \resumeItem{Moderated live Q\&A sessions with actors and directors after screenings, hosted film introductions, and led panel discussions}
+        \resumeItem{Organized monthly screenings and youth-initiative events at the TIFF Bell Lightbox, engaging 500+ attendees each time}
+       % \resumeItem{Marketed and modeled the TIFF merchandise line for their social media platforms}
+      \resumeItemListEnd
+    
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    
+
+  \resumeSubHeadingListEnd
+
+
+
+
+%
+
+
+%-------------------------------------------
+\end{document}
