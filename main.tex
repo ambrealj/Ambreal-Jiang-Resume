@@ -40,10 +40,10 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-0.7in}
+\addtolength{\topmargin}{-0.6in}
 
 
 \addtolength{\textheight}{1.0in}
@@ -119,7 +119,7 @@
     \href{https://www.linkedin.com/in/ambreal-jiang/}{\underline{linkedin.com/in/ambreal-jiang}} $|$
     \href{https://github.com/ambrealj}{\underline{github.com/ambrealj}} %$|$
    % \href{https://ambreal-jiang.vercel.app/}{\underline{Website}} 
-   \resumeItem{Computer Science and Engineering student at UCLA specializing in computer vision, embedded systems, and hardware-software integration, with a parallel passion for film shaped by hands-on festival production experience.}
+   \resumeItem{Computer Science and Engineering student at UCLA specializing in computer vision, embedded systems, and hardware-software integration, and media processing technology.}
 \end{center}
 %-----------EDUCATION-----------
 \section{Education}
@@ -156,34 +156,33 @@
        
            
           \resumeItemListEnd
-          \resumeProjectHeading
-            {\textbf{\underline{\href{https://github.com/ambrealj/Embedded-Wheel-Speed-Monitoring-System}{Embedded Wheel-Speed Monitoring System}}} $|$ \emph{C++, Arduino}}{October 2025 -- February 2026}
-            \resumeItemListStart
-            \resumeItem{Led a 3-person team to design and program a PID-controlled wheel-speed monitoring system in Arduino C++ for Bruin Baja Racing, improving vehicle acceleration and handling}
-            \resumeItem{Designed and routed a sensor circuit integrating a geartooth sensor and switch for reliable real-time RPM detection}
-            \resumeItem{Built an I2C LCD dashboard translating live RPM data into real-time speed telemetry, giving drivers immediate performance feedback}
-        \resumeItemListEnd
-         \resumeProjectHeading   
-          {\textbf{\underline{\href{https://github.com/ambrealj/ECG-Monitoring-System}{ECG Monitoring System}}} $|$ \emph{C++, Arduino, Autodesk Fusion, CAD}}{March 2026 -- June 2026}
-          \resumeItemListStart
-            \resumeItem{Led a 3-person team to deliver a working ECG monitoring prototype, integrating custom analog circuitry, microcontroller firmware, and an LCD display into one device}
-
-            \resumeItem{Designed and routed an 18-component PCB in Autodesk Fusion with software-adjustable gain via dual MCP41xx digital potentiometers, then modeled a protective enclosure in CAD}
-            \resumeItemListEnd
-          \resumeProjectHeading
-          {\textbf{\underline{\href{https://github.com/ambrealj/Automatic-License-Plate-Recognition-System}{Automatic License Plate Recognition System}}} $|$ \emph{Python, YOLOv8, EasyOCR, OpenCV}}{[Month Year -- Month Year]}
+             \resumeProjectHeading
+          {\textbf{\underline{\href{https://github.com/ambrealj/Automatic-License-Plate-Recognition-System}{Automatic License Plate Recognition System}}} $|$ \emph{Python, YOLOv8, EasyOCR, OpenCV}}{July 2026}
         \resumeItemListStart
         \resumeItem{Detected and tracked vehicles and license plates across traffic video by fine-tuning a YOLOv8 model and applying Kalman-filter-based (SORT-style) tracking to maintain plate identity through occlusion and frame gaps}
         \resumeItem{Delivered analysis-ready output by interpolating missed detections between frames (SciPy) and exporting consolidated vehicle-plate records to structured spreadsheets via Pandas}
-    \resumeItemListEnd
-         \resumeProjectHeading         {\textbf{\underline{\href{https://github.com/ambrealj/Pneumonia-Detection-Web-Application}{Pneumonia Detection Web Application}}} $|$  \emph{Python, TensorFlow/Keras, Flask, Pillow}}{July 2026 -- August 2026}
+        \resumeItemListEnd
+         \resumeProjectHeading         {\textbf{\underline{\href{https://github.com/ambrealj/Pneumonia-Detection-Web-Application}{Pneumonia Detection Web Application}}} $|$  \emph{Python, TensorFlow/Keras, Flask, Pillow}}{June 2026}
           \resumeItemListStart
             \resumeItem{Achieved 98\% recall, 93.5\% accuracy, and 94\% precision across 5,200+ chest X-rays by training and validating a deep learning classifier (TensorFlow/Keras) against ground-truth diagnostic labels}
             \resumeItem{Deployed a Flask web app delivering instant pneumonia diagnostics from user-uploaded X-rays on an interactive browser UI}
        
           \resumeItemListEnd
+           \resumeProjectHeading   
+          {\textbf{\underline{\href{https://github.com/ambrealj/ECG-Monitoring-System}{ECG Monitoring System}}} $|$ \emph{C++, Arduino, Autodesk Fusion, CAD}}{March 2026 -- June 2026}
+          \resumeItemListStart
+            \resumeItem{Delivered a fully functional ECG prototype integrating analog signal-conditioning circuitry, microcontroller firmware, and an LCD display into one working device by leading a 3-person hardware team from schematic through final build}
 
-       
+            \resumeItem{Engineered a precision-tunable signal path by designing and routing an 18-component PCB in Autodesk Fusion with software-adjustable gain via dual MCP41xx digital potentiometers, then modeled a protective enclosure in CAD}
+            \resumeItemListEnd
+          \resumeProjectHeading
+            {\textbf{\underline{\href{https://github.com/ambrealj/Embedded-Wheel-Speed-Monitoring-System}{Embedded Wheel-Speed Monitoring System}}} $|$ \emph{C++, Arduino}}{October 2025 -- February 2026}
+            \resumeItemListStart
+            \resumeItem{Improved Bruin Baja Racing vehicle acceleration and handling by architecting a closed-loop PID control system in Arduino C++, directing a 3-person team from sensor design through on-vehicle testing}
+            \resumeItem{Achieved reliable real-time RPM detection under vibration and vehicle noise by designing and routing a sensor circuit integrating a geartooth sensor and switch}
+            \resumeItem{Built an I2C LCD dashboard to convert live RPM data into real-time speed telemetry for drivers, closing the feedback loop}
+        \resumeItemListEnd
+        
     \resumeSubHeadingListEnd
 
  
@@ -195,7 +194,7 @@
       {Secretary And Webmaster}{April 2026 -- Present}
       {IEEE WATT}{Los Angeles, CA}
       \resumeItemListStart
-         \resumeItem{Built and shipped a full-stack website for IEEE WATT's 350+ member chapter, engineering responsive UI components in JavaScript, Node.js, Express, Bootstrap, and Handlebars \href{https://github.com/uclawatt/watt-site}{(Code)}, \href{https://watt-site-blush.vercel.app/}{(Website)}}
+         \resumeItem{Built and shipped a full-stack website for IEEE WATT's 350+ member chapter, engineering responsive UI components in JavaScript, Node.js, Express, Bootstrap, and Handlebars \href{https://github.com/uclawatt/watt-site}{[Code]}, \href{https://watt-site-blush.vercel.app/}{[Live Site]}}
          \resumeItem{Increased engagement by authoring and distributing weekly newsletters covering events and initiatives to 350+ members}
         \resumeItem{Centralized event coordination and internal communication for the officer team by building a shared Notion workspace}
         
